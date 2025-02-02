@@ -1,0 +1,133 @@
+*{
+    font-family:Binance PLEX;
+    margin:0;
+    padding:0;
+  }
+  
+  :root{
+    --color-green:#1d6b3a;;  
+    --color-green-shade:#04aa6d;
+    --color-black:black;
+  }
+  
+
+  .nav-bar{
+    position: fixed;    /*to keep the menu bar at the top even if scrolling*/
+    z-index: 999;          /*so it doesnt hide under anything else*/
+    top:0;
+    width: 100%;
+   display:flex;          
+    justify-content:space-around;    
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--color-green);
+     }
+
+     .nav-links{
+        display: flex;
+        justify-content: space-around;
+       
+        
+        width:  80%;
+      }
+
+      .nav-links li{
+        list-style: none;
+        padding: 2%;
+          }
+      
+      .nav-links a{
+          text-decoration: none;
+          color:white;
+          letter-spacing: 2px;
+          font-weight: bold;
+          }
+
+          li::after{
+            content:'';
+            width:0;
+            height: 1px;
+            background-color:white;
+            display: block;
+            transition: width 0.5s ease-in-out;
+          }
+      
+          li:hover{
+            cursor: pointer;
+           }
+      
+          li:hover::after{
+                width:100%;
+        }
+
+
+        .menu-icon div{
+            width:15px;
+            height:4px;                          /*height of each line*/
+            background-color:white;
+            margin:3px;
+            padding-right: 12px;
+            transition: all 0.3s ease;           /*transition from menu icon to close takes 0.3s*/
+           }
+
+
+           .menu-icon{
+            display: none;
+            }
+            
+
+
+.absolute_container{
+    position: relative;
+   /* margin-top: 8%;*/
+   padding-top: 2%;
+  }
+  
+  .text_absolute{
+    position: absolute;
+    top:20%;
+    left:15%;
+    opacity: 1;
+    
+  }
+  
+  
+  
+  .flower_image{
+    aspect-ratio: 2/1;
+    width: 80%;
+    height:100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display:  block;
+    opacity: 0.8;
+   
+  }
+  
+  .button{
+   
+    background-color:var(--color-green);
+    border-color: var(--color-green);
+    font-size: clamp(1em,1vw , 5em);
+    cursor: pointer;
+    color:white;
+    
+  
+    padding:1% 4%;
+    color:white;
+    
+    border: none;
+  
+  }
+  
+  .button:hover , .button-login:hover{
+    color:white;
+    background-color:var(--color-black);
+    
+    
+  }
+  button a {
+    text-decoration: none;
+    color:white;
+   
+  }
