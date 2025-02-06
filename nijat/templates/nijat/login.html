@@ -1,0 +1,34 @@
+{% extends 'nijat/layout.html' %}
+{% load static %}
+
+{% block body %}
+    <section class="form">
+        <h3>
+            Micro-Finance Programme
+        </h3>
+
+        <form action="/login" method="POST">
+            
+            <label for= "email"></label>
+            <input  type="text" name="email" placeholder="Email *"required><br><br>
+
+            <label for= "password"></label>
+            <input  type="password" name="password" placeholder="Password *" required ><br><br>
+  
+            <input type= "submit" value= "LOGIN">
+
+       </form>
+
+       <h5>New to the platform?</h5><br>
+         <button class="button"><a href="{% url 'signup' %}">SIGNUP</a></button>
+    </section>
+
+{% endblock %}
+
+  
+   
+
+
+
+    
+

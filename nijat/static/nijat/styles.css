@@ -131,3 +131,51 @@
     color:white;
    
   }
+
+  .form{
+    margin-top:8%;
+    margin-left: auto;
+    margin-right: auto;
+    /*text-align: center;*/
+    width: 40%;
+   
+  }
+  
+  input[type=text], input[type=number] , input[type=password] ,select {
+    width: 99%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit]{
+    background-color:var(--color-green);
+    padding: 5px 20px;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 4%;
+    border: none;
+  
+  }
+  
+  input[type=submit]:hover{
+    background-color:black;
+    cursor:pointer;
+   }
+  
+  .login{
+    text-align: center;
+  }
+  
+  
+  .form-filled{
+      margin-top:8%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  

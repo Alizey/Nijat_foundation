@@ -1,0 +1,103 @@
+{% extends 'nijat/layout.html' %}
+{% load static %}
+
+
+
+
+{% block body %} 
+    <div class="form">
+        <h3>
+            Micro-Finance Programme
+        </h3>
+
+        <form action="/filloutform" method="POST">
+            
+            <label for= "email"></label>
+            <input  type="text" name="email" placeholder="Email *"required><br><br>
+
+            <label for= "password"></label>
+            <input  type="password" name="password" placeholder="Password *" required ><br><br>
+
+             <label for= "password"></label>
+            <input  type="password" name="confirmpassword" placeholder="Confirm Password *" required ><br><br>
+       
+       
+            
+
+            <label for="loan">Select the purpose of Loan:</label>
+                <select name="loantype" id="loan" required>
+                   <option value="BL "> Business Loan : To start a new business or expand an existing one </option>
+                   <option value="AL">Agricultural loan : For agriculture purposes</option>
+                   <option value="FL">Freedom Loan: interest free loan</option>
+                   <option value="GL">GharLoan: for making your dream house</option>
+                   <option value="EL">Education Loan : for completing Education</option>
+                   <option value="HL">Health Loan : for health purposes</option>
+                   <option value="ML">Marriage Loan : for marrying according to Sunnah</option>
+                   <option value="EL">Emergency Loan : In case of any Emergency</option>
+                </select> <br><br>
+       
+            <label for= "fullname"></label>
+            <input type="text" name="fullname" placeholder="Full Name *" required><br><br>
+       
+            <label for= "fathername"></label>
+            <input type="text" name="fathername" placeholder="Father's Name *" required><br><br>
+
+            <label for= "address"></label>
+            <input type="text" name="address" placeholder="Address *" required><br><br>
+
+            <label for= "phnumber"></label>
+            <input type="number" name="phnumber" placeholder="Contact Number *" required><br><br>
+
+            <label for= "idnumber"></label>
+            <input type="number" name="idnumber" placeholder="Id Number/Driving License/Passport Number *" required><br><br>
+
+            <label for= "image"></label>
+            <input type="file" id="myFile" name="filename" required>
+            <input type="submit" value="Upload File"><br>
+
+            <label for= "amountneeded"></label>
+            <input type="number" name="amountneeded" placeholder="Total Amount Needed *" required><br><br>
+
+            <label for= "monthlyinstallment"></label>
+            <input type="number" name="monthlyinstallment" placeholder="Monthly installment *" required><br><br>
+
+            <label for= "totalinstallments"></label>
+            <input type="number" name="totalinstallments" placeholder="Total installments *" required><br><br>
+
+
+            <label for= "sponsorialname"></label>
+            <input type="text" name="sponsorname" placeholder="Sponsorial's fullname *" required><br><br>
+
+            <label for= "sponsorialnumber"></label>
+            <input type="number" name="sponsornumber" placeholder="Sponsorial's  Contact Number *" required ><br><br>
+
+            <label for= "sponsorialaddress"></label>
+            <input type="text" name="sponsoraddress" placeholder="Sponsorial's  Address *" required><br><br>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="Date" required > <br> <br>
+              
+       
+            <input type= "submit" value= "SUBMIT">
+
+       </form>
+
+       <h5>Already have an account?</h5><br>
+    <button class="button"><a href="/login">LOGIN</a></button>
+      
+    
+
+    </div>
+
+{% endblock %}
+
+
+   
+   
+
+
+
+    
+
+</body>
+</html>
